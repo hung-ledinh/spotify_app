@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) =>  const GetStartedPage(),
+          builder: (context) => const GetStartedPage(),
         ),
       ),
     );
@@ -55,7 +55,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Colors.black,
-        child: Image.asset(Assets.images.spotifyLogo.path));
+      color: Colors.black,
+      child: Image.asset(Assets.images.spotifyLogo.path),
+    );
   }
 }
